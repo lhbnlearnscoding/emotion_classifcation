@@ -1,0 +1,12 @@
+seed: 42
+model_name: distilbert-base-uncased
+dataset_name: dair-ai/emotion     # 6 lớp
+max_length: 128
+batch_size: 32
+num_workers: 2
+epochs: 3
+lr: 2e-5
+weight_decay: 0.01
+warmup_ratio: 0.1
+ckpt_dir: ./checkpoints
+device: auto   # auto|cpu|cuda
